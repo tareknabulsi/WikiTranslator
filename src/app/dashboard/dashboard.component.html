@@ -1,0 +1,32 @@
+<html>
+  <div id="input">
+    <form (ngSubmit)="searchWiki()">
+      <div id="searchAndSelectContainer">
+        <div class="form-group">
+          <label>Enter a search phrase</label>
+          <input type="text" class="form-control" style="width: 100%;" name="wikiSearchString" required [(ngModel)]="wikiSearchString">
+        </div>
+        <div class="form-group" style="margin-top: 35px; margin-left: 75px;">
+          Select Language:
+          <select name="language" required [(ngModel)]="language">
+              <option value="de">German</option>
+              <option value="sv">Swedish</option>
+              <option value="ja">Japanese</option>
+          </select>
+        </div><!--Language Selector-->
+      </div><!--searchAndSelectContainer-->
+      <button type="submit" class="btn">Search Wiki</button>
+    </form>
+  </div><!--input-->
+
+  <div id="results">
+    <h1 style="margin-bottom: 25px">{{ title }}</h1>
+    <div id="paragraph" *ngFor="let text of wikiText; let i = index;">
+        <h4 *ngIf="text.title" style="margin-top: 50px"><strong>{{ text.title }}</strong></h4>
+        <p id="paragraph{{ i }}">{{ text.content }}</p>
+        <span *ngIf="text.content != ''">
+          <button id="button{{ i }}" class="button" (click)="translateButton(i)">Translate</button>
+        </span>
+    </div>
+  </div>
+</html>

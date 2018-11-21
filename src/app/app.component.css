@@ -1,0 +1,46 @@
+html {
+  width: 100%;
+  min-width: 950px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+ul li {
+  display: inline;
+  float: left;
+  margin-top: 5px;
+  font-size: 1.5em;
+  font-family: 'Raleway', 'Arial';
+  margin-right: 40px;
+}
+.header {
+  height: 35px;
+  margin-top: 10px;
+}
+#headerChild {
+  display: none; /*Good to go.*/
+  width:100%;
+  height: 100%;
+}
+#userType {
+  position: absolute;
+  display: inline;
+  right: 225px;
+  margin-top: 5px;
+  font-size: 1.5em;
+  color: #990c0c;
+  font-family: 'Raleway', 'Arial';
+}
+button.header-child {
+  position: absolute;
+  right: 25px;
+  width: 10%;
+}

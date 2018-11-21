@@ -1,0 +1,8 @@
+#header strong {
+  font-family: Verdana;
+  font-size: 20px;
+  display: inline-block;
+}
+span {
+  vertical-align: middle;
+}

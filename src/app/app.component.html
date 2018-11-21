@@ -1,0 +1,20 @@
+<html>
+  <div class="header">
+    <div id="headerChild">
+      <ul>
+        <li><a routerLink = "dashboard" >Dashboard</a></li>
+        <li><a routerLink = "history" >History</a></li>
+      </ul>
+      <label id="userType"></label>
+      <button
+              class="header-child btn btn-primary btn-danger"
+              (click)="logout()">
+              Logout
+      </button>
+    </div>
+  </div>
+
+  <hr>
+
+  <router-outlet></router-outlet>
+</html>

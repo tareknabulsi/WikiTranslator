@@ -1,0 +1,46 @@
+button {
+  position: absolute;
+  width: 10%;
+}
+
+img {
+  margin: auto;
+}
+
+#topContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#topContainer div {
+  width: 90%;
+}
+
+#imageContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+#titleContainer {
+  display: flex;
+  background-color: #008CBA;
+  color: white;
+  border-radius: 15px;
+  margin: 10px auto;
+}
+
+#title {
+  font-family: 'Verdana';
+  font-size: 30px;
+  margin: auto;
+}
+
+#error {
+  position: absolute;
+  margin-bottom: 5px;
+  bottom: 0;
+  left: 0;
+  color: red;
+  display: none;
+}
