@@ -1,3 +1,10 @@
+This Angular web application was a final project for my web applications development class. Unfortunately the uploaded code does not include the API key and therefore cannot be fully tested. However, the app is built to retrieve a Wiki article based on the user search. The Wiki article is parsed to be completely plain text. Each paragraph has a button next to it that will allow for the text to be translated into a language of the user's choice. 
+
+This app also is supported by Firebase's authentication system for logging in. The user search history is also maintained through a Firebase database.
+
+Admin: tareknabulsi@me.com Password: password
+Guest: guest@email.com     Password: password
+
 # TranslateApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.0-rc.1.
